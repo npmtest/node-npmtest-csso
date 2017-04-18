@@ -1,7 +1,10 @@
-# test coverage for  [csso (v3.0.1)](https://github.com/css/csso)  [![npm package](https://img.shields.io/npm/v/npmtest-csso.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-csso) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-csso.svg)](https://travis-ci.org/npmtest/node-npmtest-csso)
+# npmtest-csso
+
+#### test coverage for  [csso (v3.0.1)](https://github.com/css/csso)  [![npm package](https://img.shields.io/npm/v/npmtest-csso.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-csso) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-csso.svg)](https://travis-ci.org/npmtest/node-npmtest-csso)
+
 #### CSSO (CSS Optimizer) is a CSS minifier with structural optimisations
 
-[![NPM](https://nodei.co/npm/csso.png?downloads=true)](https://www.npmjs.com/package/csso)
+[![NPM](https://nodei.co/npm/csso.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/csso)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-csso/tree/alpha)|
 |--:|:--|
@@ -9,11 +12,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-csso/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-csso/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-csso/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-csso/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-csso/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-csso/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-csso/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-csso/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-csso/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-csso%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-csso/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-csso/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-csso/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-csso/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-csso%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-csso/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-csso/build/test-report.html](https://npmtest.github.io/node-npmtest-csso/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-csso/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-csso/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-csso/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-csso/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-csso/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-csso/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-csso/build/screenCapture.npmPackageListing.svg)
 
@@ -28,7 +37,6 @@
 {
     "author": {
         "name": "Sergey Kryzhanovsky",
-        "email": "skryzhanovsky@ya.ru",
         "url": "https://github.com/afelix"
     },
     "bugs": {
@@ -95,21 +103,17 @@
     "main": "./lib/index",
     "maintainers": [
         {
-            "name": "afelix",
-            "email": "skryzhanovsky@gmail.com"
+            "name": "afelix"
         },
         {
-            "name": "lahmatiy",
-            "email": "rdvornov@gmail.com"
+            "name": "lahmatiy"
         },
         {
-            "name": "tadatuta",
-            "email": "i@tadatuta.com"
+            "name": "tadatuta"
         }
     ],
     "name": "csso",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/css/csso.git"
