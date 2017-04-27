@@ -1,6 +1,6 @@
 # npmtest-csso
 
-#### test coverage for  [csso (v3.0.1)](https://github.com/css/csso)  [![npm package](https://img.shields.io/npm/v/npmtest-csso.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-csso) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-csso.svg)](https://travis-ci.org/npmtest/node-npmtest-csso)
+#### basic test coverage for  [csso (v3.1.1)](https://github.com/css/csso)  [![npm package](https://img.shields.io/npm/v/npmtest-csso.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-csso) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-csso.svg)](https://travis-ci.org/npmtest/node-npmtest-csso)
 
 #### CSSO (CSS Optimizer) is a CSS minifier with structural optimisations
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-csso/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-csso/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-csso/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-csso/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-csso/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-csso/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-csso/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-csso/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-csso/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-csso/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-csso/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-csso/build/coverage.html/index.html)
 
@@ -43,7 +43,7 @@
         "url": "https://github.com/css/csso/issues"
     },
     "dependencies": {
-        "css-tree": "1.0.0-alpha17"
+        "css-tree": "1.0.0-alpha19"
     },
     "description": "CSSO (CSS Optimizer) is a CSS minifier with structural optimisations",
     "devDependencies": {
@@ -53,13 +53,14 @@
         "istanbul": "^0.4.2",
         "jscs": "~2.10.0",
         "mocha": "~2.4.2",
+        "package-json-versionify": "^1.0.4",
         "source-map": "^0.5.6",
         "uglify-js": "^2.6.1"
     },
     "directories": {},
     "dist": {
-        "shasum": "1469af5ee2ec509addadd8777aa0e45acb6b2f58",
-        "tarball": "https://registry.npmjs.org/csso/-/csso-3.0.1.tgz"
+        "shasum": "ab427584486c2e02e180327511b0b02a9179c272",
+        "tarball": "https://registry.npmjs.org/csso/-/csso-3.1.1.tgz"
     },
     "engines": {
         "node": ">=0.10.0"
@@ -90,7 +91,7 @@
         "LICENSE",
         "README.md"
     ],
-    "gitHead": "f3415a2b641a46cdf0f7a4dbd2b1053122597186",
+    "gitHead": "cd79eec3210d597a1e321e2e7d5cbc908e074b7f",
     "homepage": "https://github.com/css/csso",
     "keywords": [
         "css",
@@ -119,7 +120,7 @@
         "url": "git+https://github.com/css/csso.git"
     },
     "scripts": {
-        "browserify": "browserify --standalone csso lib/index.js | uglifyjs --compress --mangle -o dist/csso-browser.js",
+        "browserify": "browserify -t package-json-versionify --standalone csso lib/index.js | uglifyjs --compress --mangle -o dist/csso-browser.js",
         "codestyle": "jscs lib test && eslint lib test",
         "codestyle-and-test": "npm run codestyle && npm test",
         "coverage": "istanbul cover _mocha -- -R dot",
@@ -130,7 +131,8 @@
         "test": "mocha --reporter dot",
         "travis": "npm run codestyle-and-test && npm run coveralls"
     },
-    "version": "3.0.1"
+    "version": "3.1.1",
+    "bin": {}
 }
 ```
 
